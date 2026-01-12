@@ -76,6 +76,82 @@ img{
     min-height: -webkit-fill-available;
 }
 
+/*  kick  */
+.page-kickboxing{
+     position: relative;
+    height: 100vh; /* cijela visina ekrana */
+    background-image: url('../img/dvorana6.JPG'); /* tvoja slika */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    height: 100%;
+}
+
+.page-kickboxing::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4); /* poluprozirna crna */
+    z-index: 1;
+    height: 100%;  /* uvijek pokriva cijeli hero */
+}
+
+/* mma */
+.page-mma{
+     position: relative;
+    height: 100vh; /* cijela visina ekrana */
+    background-image: url('../img/dvorana6.JPG'); /* tvoja slika */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    height: 100%;
+}
+
+.page-mma::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4); /* poluprozirna crna */
+    z-index: 1;
+    height: 100%;  /* uvijek pokriva cijeli hero */
+}
+
+/* zrk */
+
+.page-zene{
+     position: relative;
+    height: 100vh; /* cijela visina ekrana */
+    background-image: url('../img/dvorana6.JPG'); /* tvoja slika */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    height: 100%;
+}
+
+.page-zene::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4); /* poluprozirna crna */
+    z-index: 1;
+    height: 100%;  /* uvijek pokriva cijeli hero */
+}
+
 .hero .headline,
 .hero .CTA {
     position: relative;
