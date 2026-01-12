@@ -1,0 +1,607 @@
+
+/* MOBILE */
+*{
+    box-sizing: border-box;
+}
+
+
+head{
+    padding: 20px;
+}
+
+h1,h2,h3,h4{
+    font-family: 'Bebas Neue',sans-serif;
+}
+
+body{
+    font-family: 'Montserrat' , sans-serif;
+    background-color: #adadad;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.navigacija{
+    background-color: white;
+}
+
+.nav-bar,
+.footer{
+    color: black;
+}
+.nav-bar{
+    position: absolute;  /* umjesto relative */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;         /* iznad hero slike */
+    background: transparent;  /* transparentno da se vidi slika */
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+img{
+    width: 100%;
+    max-width: 100%;
+}
+
+.hero {
+     position: relative;
+    height: 100vh; /* cijela visina ekrana */
+    background-image: url('../img/dvorana6.JPG'); /* tvoja slika */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+/* overlay */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4); /* poluprozirna crna */
+    z-index: 1;
+    height: 100%;  /* uvijek pokriva cijeli hero */
+}
+
+.hero .headline,
+.hero .CTA {
+    position: relative;
+    z-index: 2;
+}
+
+/* Flexbox */
+.flex-container{
+    display: flex;
+    gap: 20px;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-around{
+    justify-content: space-around;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-row{
+    flex-direction: row;
+}
+
+/* Header */
+header .logo{
+    width: 160px;
+}
+.main-nav{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+.main-nav li a {
+        color: white; }
+
+.mobile-nav{
+    font-size: 27px;
+}
+
+.headline h1{
+    color: black;
+    padding: 20px;
+    font-size: 60px;
+    text-align: center;
+    border-radius: 2px;
+    margin-top: 150px;
+    margin-bottom: 10px;
+}
+
+.headline .naslov1{
+    font-size: 70px;
+    margin-bottom: 0px;
+    color: white;
+    z-index: 2;
+}
+
+.CTA{
+   position: relative; /* da je iznad overlay-a */
+    display: inline-block; /* nužno za link */
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 20px ; /* veći klikabilni prostor */
+    text-align: center;
+    letter-spacing: 5px;
+    z-index: 2; /* iznad overlay-a */
+    margin-top: 0px; /* razmak od naslova */
+}
+
+.CTA:hover{
+    color: rgb(227, 201, 57);
+}
+
+
+.content h2{
+    margin-bottom: 40px;
+    font-size: 36px;
+    text-align: center;
+}
+
+.content article{
+    padding: 5px;
+    background-color: white;
+    color: black;
+    margin-bottom: 10px;
+    border-radius: 12px;
+}
+.content article img{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.content article h3{
+    text-align: center;
+}
+.content article p{
+    margin: 10px;
+    text-align: justify;
+}
+
+
+/* DRUGA SEKCIJA */
+.secondsection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: rgb(31, 31, 31);
+    margin: auto;
+    text-align: center;
+    margin: 0;
+    height: 600px;
+    padding: 100px;
+}
+
+.naslov3{
+    
+
+padding-top: 50px;
+padding-bottom: 10px;
+display: inline-block;
+border-bottom: 3px solid white;
+font-size: 20px;
+}
+
+
+.parag1{
+   
+width: 400px;
+    padding-bottom: 50px;
+}
+
+.naslovslike{
+    padding: 20px;
+}
+
+/* FOOTER */
+footer{
+    text-align: center;
+}
+
+.footer-nav{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.footer-nav a{
+    color: black;
+    text-decoration: none;
+}
+
+.footer-nav a:hover{
+    color: gold;
+}
+
+.kontakt1{
+    padding: 30px;
+}
+
+.mob1{
+    font-size: 30px;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid gold;
+}
+
+.mob2{
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.cta2{
+    font-size: 19px;
+}
+
+.email{
+    font-size: 22px;
+    margin-top: 4px;
+}
+
+.klub{
+    margin-bottom: 0px;
+}
+
+/* STRANICA KICKBOXING MOB*/
+
+/* SLIKE RAZLIČITE ZA STRANICE */
+.page-kickboxing{
+height: 100vh; /* cijela visina ekrana */
+    background: url(../img/kickboxroko.png) no-repeat center/cover;
+    background-position-x: 70%;
+}
+
+/* MMA */
+
+.page-mma{
+height: 100vh; /* cijela visina ekrana */
+    background: url(../img/mma.jpg) no-repeat center/cover;
+    background-position-x: 70%;
+}
+
+/* ŽENSKA REK */
+
+.page-zene{
+height: 100vh; /* cijela visina ekrana */
+    background: url(../img/zenskarekreacija.jpg) no-repeat center/cover;
+    background-position-x: 70%;
+}
+
+
+/* ZA SVE STRANICE */
+.headline1{
+    background-position-x: 70%;
+    padding: 0 10px;
+    position: relative;                           /* za overlay */
+    display: flex;
+    justify-content: center;                      /* centriranje horizontalno */
+    align-items: center;                          /* centriranje vertikalno */
+    text-align: center;
+    padding: 0 10px;
+    overflow: hidden;
+     content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4); /* poluprozirna crna */
+    z-index: 1;
+    height: 100%;  /* uvijek pokriva cijeli hero */
+}
+
+.overlay {
+   position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;                                /* pokriva cijeli div */
+    background-color: rgba(0,0,0,0.5);           /* poluprozirna crna boja */
+    z-index: 1; 
+}
+
+
+  .headline1 .naslov-typing {
+    color: white;  
+    z-index: 2;     /* da je iznad overlay-a */
+    font-size: 40px;
+}
+
+
+/* typing animacija – JEDNA za sve */
+.naslov-typing {
+    white-space: nowrap;
+    overflow: hidden;
+    padding-right: 5px;
+    display: inline-block;
+
+    width: 0;
+    border-right: 4px solid white; /* KURSOR */
+
+/* ovo forwards je da ostaje tekst a steps da ide slovo po slovo */
+    animation:
+        typing 4s steps(var(--chars), end) forwards, 
+        blink 0.8s step-end infinite;
+}
+
+/* animacija tipkanja */
+@keyframes typing {
+    from { width: 0; }
+    to { width: calc(var(--chars) * 1ch); }
+}
+
+/* animacija treptanja kursora */
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+.kick1{
+    background-color: rgb(24, 24, 24);
+    padding: 20px;
+    text-align: center;
+    padding: 60px;
+    height: 400px;
+}
+
+.naslov-treninga {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.highlight1{
+    color: rgb(214, 46, 46);
+}
+
+.highlight2{
+    color: rgb(28, 28, 166);
+}
+
+.raspored {
+    width: 80%;
+    margin: 0 auto 40px auto;
+    border-collapse: collapse;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.raspored th, .raspored td {
+    border: 1px solid #333;
+    padding: 15px 10px;
+}
+
+.raspored th {
+    background-color: #222;  /* tamna boja za zaglavlje */
+    color: white;
+    font-weight: bold;
+}
+
+.raspored td {
+    background-color: #f2f2f2; /* svijetla boja za termine */
+    color: #222;
+}
+
+/* STRANICA MMA */
+
+ .headline1 .naslov1 {
+    color: white;  
+    z-index: 2;     /* da je iznad overlay-a */
+    font-size: 40px;
+}
+
+
+/* TABLET */
+@media screen and (min-width: 768px){
+    .content article{
+        width: calc(50% - 20px);
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1199px){
+    .flex-row-desktop{
+        flex-direction: row;
+    }
+
+    .content article{
+        width: calc(33% - 20px)
+    }
+
+    footer div:first-child{
+        text-align: center;
+        margin: auto;
+    }
+
+.headline h1{
+    color: black;
+    padding: 20px;
+    font-size: 70px;
+    text-align: center;
+    border-radius: 2px;
+    margin-top: 150px;
+    margin-bottom: 10px;
+}
+
+.naslov3{
+padding-top: 50px;
+padding-bottom: 10px;
+display: inline-block;
+border-bottom: 3px solid white;
+font-size: 50px;
+}
+
+.parag1{
+   font-size: 20px;
+width: 50%;
+    padding-bottom: 50px;
+}
+
+    .footer-nav{
+        text-align: center;
+    }
+
+    .mobile-nav{
+        display: none;
+    }
+    .main-nav{
+        display: flex;
+    }
+    .main-nav li{
+        margin: 0 10px;
+    }
+    .main-nav a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .main-nav a::after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: gold;
+        transition: width .3s;
+    }
+
+/* Pseudo-element ::after koristi se za stvaranje dekorativne
+ linije ispod linka. Linija je inicijalno skrivеnа jer ima širinu 0,
+  a prilikom hovera se širi na 100%, uz glatku animaciju pomoću transition. */
+
+    .main-nav a:hover::after{
+        width: 100%;
+    }
+    
+    .main-nav a:hover{
+        opacity: 70%;
+    }
+
+.headline .naslov1{
+    font-size: 100px;
+}
+
+.headline1 .naslov-typing{
+    font-size: 80px;
+}
+
+    .kick1{
+        text-align: left;
+        height: 500px;
+    }
+
+    .kick3{
+        font-size: 50px;
+    }
+
+    .kick2{
+        width: 70%;
+        text-align: left;
+        font-size: 20px;
+    }
+}
+/* HAMBURGER PROBA */
+ /* checkbox skriven */
+/* sakrij checkbox */
+.menu-toggle {
+    display: none;
+}
+
+/* Checkbox je skriven, a hamburger ikona je label povezana s njim.
+ Kada korisnik klikne hamburger, checkbox se označi i CSS selektor 
+ :checked prikazuje fullscreen navigaciju */
+
+/* hamburger */
+.mobile-nav {
+    display: none;
+    cursor: pointer;
+    font-size: 35px;
+    color: white; /* vidljivo preko hero pozadine */
+    z-index: 101; /* iznad svega */
+    position: relative;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    .mobile-nav {
+        display: block;
+    }
+
+    /* Full screen menu */
+    .main-nav {
+        display: none;
+        flex-direction: column;
+        position: fixed;       /* fixirano preko cijele stranice */
+        inset: 0;              /* top:0; right:0; bottom:0; left:0; */
+        background-color: rgba(0,0,0,0.95);
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        z-index: 100;          /* ispod hamburgera */
+        text-align: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+   
+.main-nav li a {
+    color: white;
+    font-size: 28px;
+    text-decoration: none;  /* ukloni default underline */
+    position: relative;      /* potrebno za pseudo-element */
+    transition: color 0.3s;
+}
+
+/* Pseudo-element za liniju ispod teksta */
+.main-nav li a::after {
+    content: '';
+    position: absolute;
+    width: 0;                /* linija počinje skrivena */
+    height: 2px;             /* debljina linije */
+    left: 0;
+    bottom: -3px;            /* razmak od teksta */
+    background-color: gold;   /* boja linije */
+    transition: width 0.3s ease;
+}
+
+/* Kad hover, linija se širi do kraja teksta */
+.main-nav li a:hover::after {
+    width: 100%;
+}
+
+    /* toggle – pokaži menu kad je checkbox označen */
+    .menu-toggle:checked + .mobile-nav + .main-nav {
+        display: flex;
+    }
+}
+
