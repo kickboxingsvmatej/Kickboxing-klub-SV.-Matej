@@ -410,6 +410,11 @@ height: 100vh; /* cijela visina ekrana */
     color: #222;
 }
 
+/*za tablicu  */
+@media (max-width: 768px) {
+    .raspored {
+        width: 80%;  }}
+
 /* STRANICA MMA */
 
  .headline1 .naslov1 {
