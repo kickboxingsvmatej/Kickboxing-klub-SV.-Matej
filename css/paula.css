@@ -52,7 +52,6 @@ img{
 
 .hero {
      position: relative;
-    height: 100vh; /* cijela visina ekrana */
     background-image: url('../img/dvorana6.JPG'); /* tvoja slika */
     background-size: cover;
     background-position: center;
@@ -62,6 +61,7 @@ img{
     justify-content: center;
     align-items: center;
     z-index: 0;
+    height: 100%;
 }
 
 /* overlay */
