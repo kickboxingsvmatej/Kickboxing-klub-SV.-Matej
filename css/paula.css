@@ -411,9 +411,9 @@ height: 100vh; /* cijela visina ekrana */
 }
 
 /*za tablicu  */
-@media (max-width: 768px) {
+@media (max-width: 500px) {
     .raspored {
-        width: 70%;  }}
+        width: 80%;  }}
 
 /* STRANICA MMA */
 
