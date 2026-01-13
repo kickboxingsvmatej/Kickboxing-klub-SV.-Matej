@@ -519,6 +519,32 @@ height: 100vh; /* cijela visina ekrana */
         margin: auto;
     }
 
+.hero {
+     position: relative;
+    background-image: url('../img/dvorana6.JPG'); /* tvoja slika */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    height: 100vh;
+    min-height: -webkit-fill-available;
+}
+
+/* overlay */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4); /* poluprozirna crna */
+    z-index: 1;
+    height: 100%;  /* uvijek pokriva cijeli hero */
+    min-height: -webkit-fill-available;
+}
+    
 .headline h1{
     color: black;
     padding: 20px;
